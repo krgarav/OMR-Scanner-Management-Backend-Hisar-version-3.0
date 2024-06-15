@@ -30,7 +30,7 @@ const uploadCsv = (req, res, next) => {
       return res.status(400).json({ error: "Failed to upload file" });
     }
     // Call next middleware (csvUpload function) after upload is complete
-    console.log(req.file);
+    // console.log(req.file);
     req.uploadedFile = req.file;
     next();
   });

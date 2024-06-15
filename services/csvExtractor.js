@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const csvToJson = (firstFilePath) => {
     let jsonData = [];
-    console.log(firstFilePath)
+    // console.log(firstFilePath)
     return new Promise((resolve, reject) => {
         fs.createReadStream(firstFilePath)
             .pipe(csvParser())

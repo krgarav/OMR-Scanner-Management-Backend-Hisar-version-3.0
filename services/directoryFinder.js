@@ -9,7 +9,7 @@ function getAllDirectories(directoryPath) {
   fs.readdirSync(directoryPath).forEach((file) => {
     // Get the full path of the file
     const fullPath = path.join(directoryPath, file);
-    console.log(fullPath);
+    // console.log(fullPath);
     // Check if it's a directory
     if (fs.statSync(fullPath).isDirectory()) {
       directories.push(file);
