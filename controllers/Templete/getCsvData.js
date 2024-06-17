@@ -219,7 +219,7 @@ const getCsvData = async (req, res, next) => {
       );
       if (conditionCheck) {
         // Attach rowIndex to the object and add it to filteredData
-        filteredData.push({ ...obj, rowIndex: index });
+        filteredData.push({ ...obj, rowIndex: minIndex - 1 + index });
       }
     });
 
